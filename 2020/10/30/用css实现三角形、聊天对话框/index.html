@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="CSS,布局," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="ios微信浏览器内非button、a标签点击事件失效 ios微信浏览器内非button、a标签，如（div、span…）点击事件(click)无效的处理办法:    ccs加上cursor: pointer;  ios中设置readonly还有光标 在input上添加 unselectable&#x3D;”on” onfocus&#x3D;”this.blur()” 即可1&lt;input type&#x3D;&amp;#">
+<meta name="description" content="@TOC   一、css制作三角形的实现原理？三角形的实现原理是元素宽高设置为0，再设置边框宽度、样式和颜色。 例如：# 二、单个三角形## 1.原理只设置一条边的颜色，其他三边颜色设置为透明例如：   👇 向下三角  👉 向右三角  👆  向上三角     👈 向左三角  2.空心三角形只能看见边线，内部透明的三角形该如何用css实现呢  实现思路：使用css伪元素定位，用两个不同颜色、">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移动端兼容性问题解决方案">
-<meta property="og:url" content="http://yoursite.com/2019/04/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="用css实现三角形、聊天对话框">
+<meta property="og:url" content="http://yoursite.com/2020/10/30/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%81%E8%81%8A%E5%A4%A9%E5%AF%B9%E8%AF%9D%E6%A1%86/index.html">
 <meta property="og:site_name" content="路游远方">
-<meta property="og:description" content="ios微信浏览器内非button、a标签点击事件失效 ios微信浏览器内非button、a标签，如（div、span…）点击事件(click)无效的处理办法:    ccs加上cursor: pointer;  ios中设置readonly还有光标 在input上添加 unselectable&#x3D;”on” onfocus&#x3D;”this.blur()” 即可1&lt;input type&#x3D;&amp;#">
-<meta property="article:published_time" content="2019-04-22T12:56:42.000Z">
-<meta property="article:modified_time" content="2020-08-25T13:01:29.000Z">
+<meta property="og:description" content="@TOC   一、css制作三角形的实现原理？三角形的实现原理是元素宽高设置为0，再设置边框宽度、样式和颜色。 例如：# 二、单个三角形## 1.原理只设置一条边的颜色，其他三边颜色设置为透明例如：   👇 向下三角  👉 向右三角  👆  向上三角     👈 向左三角  2.空心三角形只能看见边线，内部透明的三角形该如何用css实现呢  实现思路：使用css伪元素定位，用两个不同颜色、">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030140633548.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020103014120835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030141443538.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030141646693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030141837337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030144430157.png#pic_center">
+<meta property="article:published_time" content="2020-10-30T06:45:35.000Z">
+<meta property="article:modified_time" content="2022-02-11T13:00:12.318Z">
 <meta property="article:tag" content="CSS">
-<meta property="article:tag" content="布局">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201030140633548.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center">
 
 
 
@@ -119,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/22/移动端兼容性问题解决方案/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/10/30/用css实现三角形、聊天对话框/"/>
 
 
 
 
 
-  <title>移动端兼容性问题解决方案 | 路游远方</title>
+  <title>用css实现三角形、聊天对话框 | 路游远方</title>
   
 
 
@@ -232,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/30/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E3%80%81%E8%81%8A%E5%A4%A9%E5%AF%B9%E8%AF%9D%E6%A1%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -249,7 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">移动端兼容性问题解决方案</h1>
+          <h1 class="post-title" itemprop="name headline">用css实现三角形、聊天对话框</h1>
         
 
         <div class="post-meta">
@@ -261,8 +267,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-22T20:56:42+08:00">
-                2019-04-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-30T14:45:35+08:00">
+                2020-10-30
               </time>
             
 
@@ -321,22 +327,37 @@
       
 
       
-        <h3 id="ios微信浏览器内非button、a标签点击事件失效"><a href="#ios微信浏览器内非button、a标签点击事件失效" class="headerlink" title="ios微信浏览器内非button、a标签点击事件失效"></a>ios微信浏览器内非button、a标签点击事件失效</h3><blockquote>
-<p>ios微信浏览器内非button、a标签，如（div、span…）点击事件(click)无效的处理办法:    ccs加上cursor: pointer;</p>
-</blockquote>
-<h3 id="ios中设置readonly还有光标"><a href="#ios中设置readonly还有光标" class="headerlink" title="ios中设置readonly还有光标"></a>ios中设置readonly还有光标</h3><blockquote>
-<p>在input上添加 unselectable=”on” onfocus=”this.blur()” 即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&#39;text&#39; unselectable&#x3D;&quot;on&quot; onfocus&#x3D;&quot;this.blur()&quot; readonly &#x2F;&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="ios端的输入框input-type-”number”无效"><a href="#ios端的输入框input-type-”number”无效" class="headerlink" title="ios端的输入框input type=”number”无效"></a>ios端的输入框input type=”number”无效</h3><blockquote>
-<p>使用input type=”text” 并加上oninput属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&#39;text&#39; oninput&#x3D;&quot;this.value&#x3D;this.value.replace(&#x2F;[^0-9.]+&#x2F;,&#39;&#39;)&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="h5底部输入框被键盘遮挡问题"><a href="#h5底部输入框被键盘遮挡问题" class="headerlink" title="h5底部输入框被键盘遮挡问题"></a>h5底部输入框被键盘遮挡问题</h3><blockquote>
-<p>android和ios部分机型，当输入框在最底部，点击软键盘后输入框会被遮挡<br>方案0: 在input的点击事件，或者获取焦点的事件中，加入以下api，让dom元素出现在可见视图的顶部或底部<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.querySelector(&#39;#inputId&#39;).scrollIntoView();</span><br></pre></td></tr></table></figure><br>方案1:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var oHeight &#x3D; $(document).height();</span><br><span class="line">   </span><br><span class="line">$(window).resize(function()&#123;</span><br><span class="line">    if($(document).height() &lt; oHeight)&#123;</span><br><span class="line">        $(&quot;#footer&quot;).css(&quot;position&quot;,&quot;static&quot;);</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        $(&quot;#footer&quot;).css(&quot;position&quot;,&quot;absolute&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="Input-的placeholder会出现文本位置偏上的情况"><a href="#Input-的placeholder会出现文本位置偏上的情况" class="headerlink" title="Input 的placeholder会出现文本位置偏上的情况"></a>Input 的placeholder会出现文本位置偏上的情况</h3><blockquote>
-<p>PC端：设置line-height等于height<br>移动端：设置line-height：normal</p>
-</blockquote>
-<h3 id="移动端点击后的高亮效果"><a href="#移动端点击后的高亮效果" class="headerlink" title="移动端点击后的高亮效果"></a>移动端点击后的高亮效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;-webkit-tap-highlight-color:rgba(0,0,0,0);&#125;</span><br></pre></td></tr></table></figure>
+        <p>@<a href="文章目录">TOC</a></p>
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+# 前言
+
+<font color=#999AAA >
+常见的聊天对话框，如微信，都是由一个长方形加一个三角形组合而成，重点就在于三角形的制作
+</font>
+
+<hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
+
+<h1 id="一、css制作三角形的实现原理？"><a href="#一、css制作三角形的实现原理？" class="headerlink" title="一、css制作三角形的实现原理？"></a>一、css制作三角形的实现原理？</h1><p>三角形的实现原理是元素宽高设置为0，再设置边框宽度、样式和颜色。</p>
+<font color="#999">例如：</font><br><img src="https://img-blog.csdnimg.cn/20201030140633548.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br># 二、单个三角形<br>## 1.原理<br>只设置一条边的颜色，其他三边颜色设置为透明<br><font color="#999">例如：</font>
+
+<ul>
+<li><p>👇 向下三角<br><img src="https://img-blog.csdnimg.cn/2020103014120835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+<li><p>👉 向右三角<br><img src="https://img-blog.csdnimg.cn/20201030141443538.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<ul>
+<li>👆  向上三角<br><img src="https://img-blog.csdnimg.cn/20201030141646693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>👈 向左三角<br><img src="https://img-blog.csdnimg.cn/20201030141837337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpblRpYW5vdTEyMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ul>
+<h2 id="2-空心三角形"><a href="#2-空心三角形" class="headerlink" title="2.空心三角形"></a>2.空心三角形</h2><font color=#999AAA >只能看见边线，内部透明的三角形该如何用css实现呢</font>
+
+<p>实现思路：使用css伪元素定位，用两个不同颜色、不同大小的实心三角形叠加，以达到“空心”的效果</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="undefined">  width: 200px;</span></span><br><span class="line"><span class="undefined">  height: 50px;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">background-color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line"><span class="undefined">  border-radius: 6px;</span></span><br><span class="line"><span class="undefined">  position: relative;</span></span><br><span class="line"><span class="undefined">  border: 1px solid red;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-class">.box</span><span class="selector-pseudo">::before</span>&#123;</span></span><br><span class="line"><span class="undefined">  position: absolute;</span></span><br><span class="line"><span class="undefined">  top: 15px;</span></span><br><span class="line"><span class="undefined">  left: 200px;</span></span><br><span class="line"><span class="undefined">  content: '';</span></span><br><span class="line"><span class="undefined">  border-width: 10px;</span></span><br><span class="line"><span class="undefined">  border-style: solid;</span></span><br><span class="line"><span class="undefined">  border-top-color: transparent;</span></span><br><span class="line"><span class="undefined">  border-right-color: transparent;</span></span><br><span class="line"><span class="undefined">  border-bottom-color: transparent;</span></span><br><span class="line"><span class="undefined">  border-left-color: red;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="css"><span class="selector-class">.box</span><span class="selector-pseudo">::after</span> &#123;</span></span><br><span class="line"><span class="undefined">  position: absolute;</span></span><br><span class="line"><span class="undefined">  top: 15px;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">left</span>: 198<span class="selector-class">.5px</span>;</span></span><br><span class="line"><span class="undefined">  content: '';</span></span><br><span class="line"><span class="undefined">  border-width: 10px;</span></span><br><span class="line"><span class="undefined">  border-style: solid;</span></span><br><span class="line"><span class="undefined">  border-top-color: transparent;</span></span><br><span class="line"><span class="undefined">  border-right-color: transparent;</span></span><br><span class="line"><span class="undefined">  border-bottom-color: transparent;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">border-left-color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20201030144430157.png#pic_center" alt="在这里插入图片描述"></p>
 
       
     </div>
@@ -356,8 +377,6 @@
           
             <a href="/tags/CSS/" rel="tag"># CSS</a>
           
-            <a href="/tags/%E5%B8%83%E5%B1%80/" rel="tag"># 布局</a>
-          
         </div>
       
 
@@ -369,8 +388,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/21/js%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%8C%87%E5%AE%9A%E4%BD%8D%E7%BD%AE%E7%9A%84%E5%AD%97%E7%AC%A6/" rel="next" title="js获取字符串中指定位置的字符">
-                <i class="fa fa-chevron-left"></i> js获取字符串中指定位置的字符
+              <a href="/2020/10/16/%E4%BB%8E%E9%9B%B6%E6%90%AD%E5%BB%BAvue+jenkins%E8%B6%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" rel="next" title="从零搭建vue+jenkins超详细教程">
+                <i class="fa fa-chevron-left"></i> 从零搭建vue+jenkins超详细教程
               </a>
             
           </div>
@@ -379,8 +398,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/23/%E8%AE%BE%E7%BD%AEdiv%E9%80%8F%E6%98%8E%E5%BA%A6%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/" rel="prev" title="设置div透明度的两种方法">
-                设置div透明度的两种方法 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/12/12/nuxt.js%E4%BD%BF%E7%94%A8swiper%E7%9A%84%E7%BB%8F%E8%BF%87%E5%8F%8A%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/" rel="prev" title="nuxt.js使用swiper的经过及遇到的坑">
+                nuxt.js使用swiper的经过及遇到的坑 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -539,7 +558,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ios微信浏览器内非button、a标签点击事件失效"><span class="nav-number">1.</span> <span class="nav-text">ios微信浏览器内非button、a标签点击事件失效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios中设置readonly还有光标"><span class="nav-number">2.</span> <span class="nav-text">ios中设置readonly还有光标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ios端的输入框input-type-”number”无效"><span class="nav-number">3.</span> <span class="nav-text">ios端的输入框input type&#x3D;”number”无效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#h5底部输入框被键盘遮挡问题"><span class="nav-number">4.</span> <span class="nav-text">h5底部输入框被键盘遮挡问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input-的placeholder会出现文本位置偏上的情况"><span class="nav-number">5.</span> <span class="nav-text">Input 的placeholder会出现文本位置偏上的情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端点击后的高亮效果"><span class="nav-number">6.</span> <span class="nav-text">移动端点击后的高亮效果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、css制作三角形的实现原理？"><span class="nav-number">1.</span> <span class="nav-text">一、css制作三角形的实现原理？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-空心三角形"><span class="nav-number">1.1.</span> <span class="nav-text">2.空心三角形</span></a></li></ol></li></ol></div>
             
 
           </div>
